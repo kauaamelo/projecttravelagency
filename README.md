@@ -43,3 +43,7 @@ Seja você um amante da praia, um explorador cultural ou alguém em busca de rel
 ## (Conexão com o Banco de Dados MySQL)
 
 **Utilizando Java, estabelecemos uma conexão direta com nosso banco de dados MySQL. Isso nos permite executar consultas SQL para interagir com as tabelas "Pessoa" e "Passagem" em nosso banco de dados.**
+
+**Modelagem UML**: Além disso, criei uma modelagem UML que representa visualmente a estrutura do sistema, mostrando como as classes e componentes estão interconectados.
+
+![uml_viagenstka](https://github.com/kauaamelo/projecttravelagency/assets/140784122/c4845d7d-e07c-4229-b0ab-c3bf93f1badc)

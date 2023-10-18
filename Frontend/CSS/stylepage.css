@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    background-image: url(/Image/FundoSite.png);
+    background-image: url(/Frontend/Image/FundoSite.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
@@ -31,14 +31,14 @@ body {
 .navbar {
     background-color: white;
     display: flex;
-    width: 98.8vw;
+    width: auto;
     height: 6rem;
     position: relative;
     justify-content: space-between;
     align-items: center;
 }
 
-.navbar .menulista a {
+.navbar .nav-list a {
     color: #000000;
     padding: 8px 20px;
     font-size: 1.5rem;
@@ -47,7 +47,7 @@ body {
     font-weight: bolder;
 }
 
-.navbar .menulista a:hover {
+.navbar .nav-list a:hover {
     background-color: var(--supportColor2);
     color: #000000;
     transition: 0.5s;
@@ -59,12 +59,12 @@ body {
     align-items: center;    
 }
 
-.menulista {
+.nav-list {
     display: flex;
     align-items: center;
 }
 
-.menulista ul {
+.nav-list ul {
     display: flex;
     justify-content: center;
     list-style: none;  
@@ -73,7 +73,7 @@ body {
 
 /* LI DO NAVBAR  */
 
-.navegacao {
+.nav-item {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0 30px;
     font-size: 1.5rem;
@@ -82,7 +82,7 @@ body {
 
 /* BOTÃO DE ENTRAR */
 
-.botao a {
+.login-button a {
     color: black;
     border: none;
     font-weight: bolder;
@@ -96,7 +96,7 @@ body {
     text-decoration: none; 
 }
 
-.navbar .botao a:hover {
+.navbar .login-button a:hover {
     background-color: var(--supportColor1) ;
     color: black;
     transition: 0.5s;
@@ -105,69 +105,105 @@ body {
 
 /* MENU RESPONSIVO */
 
-.material-icons.md-36 {
-    font-size: 36px; 
-}
-
-.menuvertical {
+.mobile-menu-icon {
     display: none;
 }
 
-.nav-escolha {
-    
-}
-
-.menuver {
+.mobile-menu {
     display: none;
 }
 
-@media (min-width: 481px) and (max-width: 1199px) {
+.mobile-menu {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 1rem;
+    background-color: white;
+    color: #000000;
+    font-size: 2rem; 
+    align-items: center;
+    justify-content: center;
+
+}
+
+.mobile-menu ul {
+    justify-content: center;
+    list-style: none;  
+    text-decoration: none; 
+}
+
+.mobile-menu a {  
+    color: #000000;
+    padding: 3px 50px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: bolder;
+}
+
+.mobile-menu a:hover {
+    background-color: var(--supportColor2);
+    color: #000000;
+    transition: 0.7s;
+    opacity: 1;     
+}
+
+.login-button-respon {
+    padding-top: 3rem;
+}
+
+.login-button-respon a:hover {
+    background-color: var(--supportColor1);
+    color: #000000;
+    transition: 0.7s;
+    opacity: 1;  
+}
+
+@media (min-width: 400px) and (max-width: 1199px) {
     .navbar {
-        margin: 0;
+        padding: 1.5rem 4rem;
     }
 
-    .menulista {
+    .nav-item {
         display: none;
     }
 
-    .botao {
+    .login-button {
         display: none;
     }
 
-    .menuvertical {
+    .mobile-menu-icon {
         display: block;
     }
-    
-    .menuvertical button {
+
+    .mobile-menu-icon button {
         background-color: transparent;
         border: none;
         cursor: pointer;
     }
-
-    .menuver ul {
+   
+    .mobile-menu ul {
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding-bottom: 1rem;
+        padding-bottom: 0.5rem;
     }
 
-    .menuver .navbar {
+    .mobile-menu .nav-item {
         display: block;
-        padding-top: 1.2rem;
     }
 
-    .menuver .botao {
-        display: block;
-        padding: 1rem 2rem;
+    .mobile-menu .login-button {
+        display: block;  
     }
 
-    .menuver .botao {
+    .mobile-menu .login-button button {
         width: 100%;
+        align-items: center;
+        
     }
 
-    .abrir {
-        display: block;
-    }
+   .open {
+    display: block;
+   }
 }
 
 /* TODAS AS SEÇÕES DEVE CONTER: */
@@ -183,20 +219,20 @@ section {
     width: 95%;
     height: 95%;
     margin: 2.5%;
-    border-radius: 40px;
+    border-radius: 0px;
     padding: 1.5rem;
     min-height: 100vh;
-    background-color: rgb(255, 255, 255, 0.85);
+    background-color: rgb(255, 255, 255, 0.89);
 }
 
 /* FOOTER  */
 
 footer {
     width: 100%;
-    height: 9rem;
+    height: auto;
     padding-top: 1rem;
     background-color: #ffffffe6;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -204,7 +240,7 @@ footer {
 
 .footer-conteudo {
     width: 100%;
-    height: 6rem;
+    height: 9rem;
     justify-content: center;
     align-items: center;
     display: grid;
@@ -235,14 +271,14 @@ footer {
 
 .linhaemail {
     height: 1.7rem;
-    width: 11rem;
+    width: 15rem;
     background-color: #fcb653;
     border-radius: 0px 10px 10px 0px;
 }
 
 .check {
     color:black;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     border-radius: 15px;
     background-color: var(--supportColor1);
 }

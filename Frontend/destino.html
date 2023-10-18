@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ViagensTKA2.0</title>
-    <link rel="stylesheet" href="/CSS/stylepage.css">
-    <link rel="stylesheet" href="/CSS/destino.css">
-    <script src="/js/documento.js"></script>
+    <link rel="stylesheet" href="/Frontend/CSS/stylepage.css">
+    <link rel="stylesheet" href="/Frontend/CSS/destino.css">
+    <script src="/Frontend/js/documento.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
@@ -16,7 +16,7 @@
         <nav class="navbar">
 
             <div class="logo">
-                <img src="/Image/ViagensTKALogo.png">
+                <img src="/Frontend/Image/ViagensTKALogo.png">
             </div>
 
             <div class="nav-list">
@@ -43,7 +43,7 @@
             </div>
 
             <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="/Image/menu_black_24dp.svg" alt=""></button>
+                <button onclick="menuShow()"><img class="icon" src="/Frontend/Image/menu_black_24dp.svg" alt=""></button>
             </div>
 
         </nav>
@@ -80,7 +80,7 @@
             <div class="containersection1">
 
                 <div class="imginicial">
-                <img src="/Image/fundoDestino.png">
+                <img src="/Frontend/Image/fundoDestino.png">
 
                 </div>
 
@@ -89,7 +89,7 @@
                     <div class="containerdestination">
 
                     <div class="textorigin">
-                            <img class="iconcalendar" src="/Image/location_on_black_18dp.svg" alt=""> Origem: <select id="selecionar" name="Qual cidade ?">
+                            <img class="iconcalendar" src="/Frontend/Image/location_on_black_18dp.svg" alt=""> Origem: <select id="selecionar" name="Qual cidade ?">
                                 <option value="cidade">Escolha a cidade: </option>
                                 <option value="cidade">Cabo Frio</option>
                                 <option value="cidade">Buzios</option>
@@ -100,9 +100,9 @@
                                 <option value="cidade">Minas Gerais</option>
                             </select>
                     </div>
-                    <img class="iconidaevolta" src="/Image/sync_alt_black_24dp.svg" alt=""> 
+                    <img class="iconidaevolta" src="/Frontend/Image/sync_alt_black_24dp.svg" alt=""> 
                     <div class="textdestiny ">
-                            <img class="iconcalendar" src="/Image/location_on_black_18dp.svg" alt=""> Destino: <select id="selecionar" name="Qual cidade ?">
+                            <img class="iconcalendar" src="/Frontend/Image/location_on_black_18dp.svg" alt=""> Destino: <select id="selecionar" name="Qual cidade ?">
                                 <option value="cidade">Escolha a cidade: </option>
                                 <option value="cidade">Cabo Frio</option>
                                 <option value="cidade">Buzios</option>
@@ -118,13 +118,13 @@
                      <div class="containercalendar">
 
                      <div class="textdestination-one">
-                        <img class="iconcalendar" src="/Image/calendar_month_black_18dp.svg" alt=""> Ida:
+                        <img class="iconcalendar" src="/Frontend/Image/calendar_month_black_18dp.svg" alt=""> Ida:
                         <input type="date" id="calendar-one" oninput="result.value = send.value">
                     </div>
-                    <img class="iconidaevolta" src="/Image/sync_alt_black_24dp.svg" alt="">
+                    <img class="iconidaevolta" src="/Frontend/Image/sync_alt_black_24dp.svg" alt="">
                     
                         <div class="textdestination-two">
-                           <img class="iconcalendar" src="/Image/calendar_month_black_18dp.svg" alt=""> Volta:
+                           <img class="iconcalendar" src="/Frontend/Image/calendar_month_black_18dp.svg" alt=""> Volta:
                            <input type="date" id="calendar-two" oninput="result.value =send.value">
                        </div>
                 
@@ -135,21 +135,21 @@
                     <div class="card-destino">
 
                         <div class="cardpromo">
-                            <a href="#"><img src="/Image/destinoimgone.png" alt=""></a>
+                            <a href="#"><img src="/Frontend/Image/destinoimgone.png" alt=""></a>
                             <div class="cardcontent">
 
                             </div>
                         </div>
 
                         <div class="cardpromo">
-                            <a href="#"><img src="/Image/destinoimgthree.png" alt=""></a>
+                            <a href="#"><img src="/Frontend/Image/destinoimgthree.png" alt=""></a>
                             <div class="cardcontent">
 
                             </div>
                         </div>
 
                         <div class="cardpromo">
-                            <a href="#"><img src="/Image/destinoimgtwo.png" alt=""></a>
+                            <a href="#"><img src="/Frontend/Image/destinoimgtwo.png" alt=""></a>
                             <div class="cardcontent">
 
                             </div>
@@ -172,7 +172,7 @@
                 <div class="contentcard">
 
                     <div class="card">
-                        <img src="/Image/caboCard.png">
+                        <img src="/Frontend/Image/caboCard.png">
                         <h1 class="titlecard">São Paulo ⇆ Cabo Frio</h1>
                         <h2 class="descriptioncard">✔ Compre em até 10x sem juros.</h2>
                         <h2 class="descriptioncard">✔ Bagagem de até 30kg.</h2>
@@ -181,7 +181,7 @@
                     </div>
 
                     <div class="card">
-                        <img src="/Image/arraialCard.png">
+                        <img src="/Frontend/Image/arraialCard.png">
                         <h1 class="titlecard">São Paulo ⇆ Arraial do Cabo</h1>
                         <h2 class="descriptioncard">✔ Compre em até 10x sem juros.</h2>
                         <h2 class="descriptioncard">✔ Bagagem de até 30kg.</h2>
@@ -194,7 +194,7 @@
                 <div class="contentcard">
         
                     <div class="card">
-                        <img src="/Image/saquaremaCard.png">
+                        <img src="/Frontend/Image/saquaremaCard.png">
                         <h1 class="titlecard">Goiânia ⇆ Saquarema</h1>
                         <h2 class="descriptioncard">✔ Compre em até 10x sem juros.</h2>
                         <h2 class="descriptioncard">✔ Bagagem de até 30kg.</h2>
@@ -203,7 +203,7 @@
                     </div>
 
                     <div class="card">
-                        <img src="/Image/buziosCard.png">
+                        <img src="/Frontend/Image/buziosCard.png">
                         <h1 class="titlecard">Curitiba ⇆ Armação dos Búzios</h1>
                         <h2 class="descriptioncard">✔ Compre em até 10x sem juros.</h2>
                         <h2 class="descriptioncard">✔ Bagagem de até 30kg.</h2>
@@ -216,7 +216,7 @@
                 <div class="contentcard">
 
                     <div class="card">
-                        <img src="/Image/buziosCard.png">
+                        <img src="/Frontend/Image/buziosCard.png">
                         <h1 class="titlecard">Minas Gerais ⇆ Armação dos Búzios</h1>
                         <h2 class="descriptioncard">✔ Compre em até 10x sem juros.</h2>
                         <h2 class="descriptioncard">✔ Bagagem de até 30kg.</h2>
@@ -225,7 +225,7 @@
                     </div>
 
                     <div class="card">
-                        <img src="/Image/caboCard.png">
+                        <img src="/Frontend/Image/caboCard.png">
                         <h1 class="titlecard">Espírito Santo ⇆ Cabo Frio</h1>
                         <h2 class="descriptioncard">✔ Compre em até 10x sem juros.</h2>
                         <h2 class="descriptioncard">✔ Bagagem de até 30kg.</h2>

@@ -1,0 +1,252 @@
+:root {
+    --primaryColor: #2c98af; /*AZUL MAR*/
+    --secondaryColor: #81a9b9; /*AZUL CLARO*/
+    --supportColor1: #88c927; /*VERDE CLARO*/
+    --supportColor2: #fcb653; /*AMARELO*/
+}
+
+.container {
+    height: 100%;
+    width: auto;
+}
+
+.containersection1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgtextmain {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.imgtext { 
+    display: flex;  
+    width: 80%;
+    height: 100%;
+    padding-top: 2rem;
+    cursor: pointer;
+}
+
+.imgtext img {
+    min-width: 0;
+    flex: 2 2 3rem;
+    aspect-ratio: 9/16;
+    object-fit: cover;
+   
+    transition: scale 350ms ease, opacity 350ms linear;    
+}
+
+.imgtext:has(img:hover) img:not(:hover) {
+    flex: 2 2 3rem;
+    border-radius: 1.5rem;
+    scale: .9;
+    opacity: 7;
+    object-fit: cover;
+}
+
+.textmain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.textmain1 {
+    width: 50%;
+    padding-top: 3rem;
+}
+
+.textmain2 {
+    width: 85%;
+    font-size: 1.9rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.containerh1 {
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+.containersection2 {
+    width: 100%;
+    height: 100%;
+}
+
+.contentcard {
+    height: 100%;
+    display: flex;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    
+}
+
+.card {
+    overflow: hidden;
+    width: 33rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: 0.4rem 0.4rem 1.2rem #aaaaaa;
+}
+
+.card img {
+    width: 100%;
+    transition: 0.6s; 
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+.titlecard {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.3rem;
+}
+
+.descriptioncard {
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    padding-bottom: 1rem;
+}
+
+.buttoncard {
+    background-color: var(--supportColor1);
+    height: 3rem;
+    border: none;
+    padding: 0.4rem;
+    width: 80%;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 0.4rem;
+}
+
+.contentcard button:hover {
+    background-color: var(--supportColor2);
+    cursor: pointer;
+  }
+
+.contentcard img:hover {
+    overflow: hidden;
+    max-width: 100%;
+    transform: scale(1.2);
+}
+
+.benefits {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 7rem;
+}
+
+.textbenefits{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.textinformationbenefits {
+    width: 75%;
+    padding-top: 3rem;
+}
+
+.containerh1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.informationbenefits {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.informationcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--supportColor2);
+    font-family: Candara, sans-serif;
+    width: 35rem;
+    height: 50%;
+    font-size: 1.7rem;
+    border-radius: 4rem;
+    margin-bottom: 5rem;
+}
+
+.informationcard img {
+    width: 15rem;
+    height: 15rem;
+}
+
+.information {
+    width: 80%;
+}
+
+.informationcard:hover {
+    background-color: var(--supportColor1);
+    transition: 0.5s;
+}
+
+
+  @media (min-width: 400px) and (max-width: 800px) {
+
+    .textmain1 {
+        width: 100%;
+        
+    }
+
+    .contentcard {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .informationbenefits {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width: 400px) and (max-width: 1000px) {
+
+    .informationbenefits {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+}

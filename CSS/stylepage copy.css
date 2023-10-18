@@ -1,0 +1,248 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* VARIÁVEIS - COR  */
+
+:root {
+    --primaryColor: #2c98af; /*AZUL MAR*/
+    --secondaryColor: #81a9b9; /*AZUL CLARO*/
+    --supportColor1: #88c927; /*VERDE CLARO*/
+    --supportColor2: #fcb653; /*AMARELO*/
+}
+
+body {
+    background-image: url(/Image/FundoSite.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-size: cover;
+ }
+
+/* NAVBAR  */
+
+.navbar {
+    background-color: white;
+    display: flex;
+    width: 98.8vw;
+    height: 6rem;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .menulista a {
+    color: #000000;
+    padding: 8px 20px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: bolder;
+}
+
+.navbar .menulista a:hover {
+    background-color: var(--supportColor2);
+    color: #000000;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;    
+}
+
+.menulista {
+    display: flex;
+    align-items: center;
+}
+
+.menulista ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;  
+    text-decoration: none; 
+}
+
+/* LI DO NAVBAR  */
+
+.navegacao {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 30px;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* BOTÃO DE ENTRAR */
+
+.botao a {
+    color: black;
+    border: none;
+    font-weight: bolder;
+    background-color: var(--supportColor2);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px 20px;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    font-weight: 300;
+    list-style: none;  
+    text-decoration: none; 
+}
+
+.navbar .botao a:hover {
+    background-color: var(--supportColor1) ;
+    color: black;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+/* MENU RESPONSIVO */
+
+.material-icons.md-36 {
+    font-size: 36px; 
+}
+
+.menuvertical {
+    display: none;
+}
+
+.nav-escolha {
+    
+}
+
+.menuver {
+    display: none;
+}
+
+@media (min-width: 481px) and (max-width: 1199px) {
+    .navbar {
+        margin: 0;
+    }
+
+    .menulista {
+        display: none;
+    }
+
+    .botao {
+        display: none;
+    }
+
+    .menuvertical {
+        display: block;
+    }
+    
+    .menuvertical button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menuver ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .menuver .navbar {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .menuver .botao {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .menuver .botao {
+        width: 100%;
+    }
+
+    .abrir {
+        display: block;
+    }
+}
+
+/* TODAS AS SEÇÕES DEVE CONTER: */
+
+section {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    width: 95%;
+    height: 95%;
+    margin: 2.5%;
+    border-radius: 40px;
+    padding: 1.5rem;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255, 0.85);
+}
+
+/* FOOTER  */
+
+footer {
+    width: 100%;
+    height: 9rem;
+    padding-top: 1rem;
+    background-color: #ffffffe6;
+    font-size: 1.1rem;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* FOOTER  */
+
+.footer-conteudo {
+    width: 100%;
+    height: 6rem;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+.footer-menu {
+    width: 100%;
+    height: auto;
+    padding-left: 1rem;
+}
+
+.footer-menu li {
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.footer-menu a {
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.linhafooter {
+    
+}
+
+.linhaemail {
+    height: 1.7rem;
+    width: 11rem;
+    background-color: #fcb653;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.check {
+    color:black;
+    font-size: 1.3rem;
+    border-radius: 15px;
+    background-color: var(--supportColor1);
+}

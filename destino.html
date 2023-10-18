@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViagensTKA2.0</title>
+    <link rel="stylesheet" href="/CSS/stylepage.css">
+    <link rel="stylesheet" href="/CSS/destino.css">
+    <script src="/js/documento.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <img src="/Image/ViagensTKALogo.png">
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html">Home
+                            <Link>
+                        </a></li>
+                    <li class="nav-item"><a href="destino.html">Destino
+                            <Link>
+                        </a></li>
+                    <li class="nav-item"><a href="promocoes.html">Promoções
+                            <Link>
+                        </a>
+                    <li>
+                    <li class="nav-item"><a href="contato.html">Contato
+                            <Link>
+                        </a></li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="login-button">
+                <a href="#">Entrar</a>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="/Image/menu_black_24dp.svg" alt=""></button>
+            </div>
+
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-respon"><a href="index.html" class="link">Home
+                        <Link>
+                    </a></li>
+                <li class="nav-respon"><a href="destino.html" class="link">Destino
+                        <Link>
+                    </a></li>
+                <li class="nav-respon"><a href="promocoes.html" class="link">Promoções
+                        <Link>
+                    </a>
+                <li>
+                <li class="nav-respon"><a href="contato.html" class="link">Contato
+                        <Link>
+                    </a></li></a>
+
+                <div class="login-button-respon">
+                    <a href="#">Entrar</a>
+                </div>
+            </ul>
+
+
+        </div>
+        </menu>
+
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="containersection1">
+
+                <div class="imginicial">
+                <img src="/Image/fundoDestino.png">
+
+                </div>
+
+                <div class="destination">
+
+                    <div class="containerdestination">
+
+                    <div class="textorigin">
+                            <img class="iconcalendar" src="/Image/location_on_black_18dp.svg" alt=""> Origem: <select id="selecionar" name="Qual cidade ?">
+                                <option value="cidade">Escolha a cidade: </option>
+                                <option value="cidade">Cabo Frio</option>
+                                <option value="cidade">Buzios</option>
+                                <option value="cidade">Saquarema</option>
+                                <option value="cidade">Arraial do Cabo</option>
+                                <option value="cidade">São Paulo</option>
+                                <option value="cidade">Curitiba</option>
+                                <option value="cidade">Minas Gerais</option>
+                            </select>
+                    </div>
+                    <img class="iconidaevolta" src="/Image/sync_alt_black_24dp.svg" alt=""> 
+                    <div class="textdestiny ">
+                            <img class="iconcalendar" src="/Image/location_on_black_18dp.svg" alt=""> Destino: <select id="selecionar" name="Qual cidade ?">
+                                <option value="cidade">Escolha a cidade: </option>
+                                <option value="cidade">Cabo Frio</option>
+                                <option value="cidade">Buzios</option>
+                                <option value="cidade">Saquarema</option>
+                                <option value="cidade">Arraial do Cabo</option>
+                                <option value="cidade">São Paulo</option>
+                                <option value="cidade">Curitiba</option>
+                                <option value="cidade">Minas Gerais</option>
+                            </select>
+                     </div>
+                    </div>
+
+                     <div class="containercalendar">
+
+                     <div class="textdestination-one">
+                        <img class="iconcalendar" src="/Image/calendar_month_black_18dp.svg" alt=""> Ida:
+                        <input type="date" id="calendar-one" oninput="result.value = send.value">
+                    </div>
+                    <img class="iconidaevolta" src="/Image/sync_alt_black_24dp.svg" alt="">
+                    
+                        <div class="textdestination-two">
+                           <img class="iconcalendar" src="/Image/calendar_month_black_18dp.svg" alt=""> Volta:
+                           <input type="date" id="calendar-two" oninput="result.value =send.value">
+                       </div>
+                
+                        </div>
+
+                    </div>
+                    
+                    <div class="card-destino">
+
+                        <div class="cardpromo">
+                            <a href="#"><img src="/Image/destinoimgone.png" alt=""></a>
+                            <div class="cardcontent">
+
+                            </div>
+                        </div>
+
+                        <div class="cardpromo">
+                            <a href="#"><img src="/Image/destinoimgthree.png" alt=""></a>
+                            <div class="cardcontent">
+
+                            </div>
+                        </div>
+
+                        <div class="cardpromo">
+                            <a href="#"><img src="/Image/destinoimgtwo.png" alt=""></a>
+                            <div class="cardcontent">
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+             </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            
+            <div class="containersection2">
+
+                <div class="contentcard">
+
+                    <div class="card">
+                        <img src="/Image/caboCard.png">
+                        <h1 class="titlecard">São Paulo ⇆ Cabo Frio</h1>
+                        <h2 class="descriptioncard">✔ Compre em até 10x sem juros.</h2>
+                        <h2 class="descriptioncard">✔ Bagagem de até 30kg.</h2>
+                        <h2 class="descriptioncard">✔ Segurança em dobro.</h2>
+                        <button class="buttoncard">R$ 99,00</button>
+                    </div>
+
+                    <div class="card">
+                        <img src="/Image/arraialCard.png">
+                        <h1 class="titlecard">São Paulo ⇆ Arraial do Cabo</h1>
+                        <h2 class="descriptioncard">✔ Compre em até 10x sem juros.</h2>
+                        <h2 class="descriptioncard">✔ Bagagem de até 30kg.</h2>
+                        <h2 class="descriptioncard">✔ Segurança em dobro.</h2>
+                        <button class="buttoncard">R$ 119,00</button>
+                    </div>
+
+                </div>
+
+                <div class="contentcard">
+        
+                    <div class="card">
+                        <img src="/Image/saquaremaCard.png">
+                        <h1 class="titlecard">Goiânia ⇆ Saquarema</h1>
+                        <h2 class="descriptioncard">✔ Compre em até 10x sem juros.</h2>
+                        <h2 class="descriptioncard">✔ Bagagem de até 30kg.</h2>
+                        <h2 class="descriptioncard">✔ Segurança em dobro.</h2>
+                        <button class="buttoncard">R$ 349,00</button>
+                    </div>
+
+                    <div class="card">
+                        <img src="/Image/buziosCard.png">
+                        <h1 class="titlecard">Curitiba ⇆ Armação dos Búzios</h1>
+                        <h2 class="descriptioncard">✔ Compre em até 10x sem juros.</h2>
+                        <h2 class="descriptioncard">✔ Bagagem de até 30kg.</h2>
+                        <h2 class="descriptioncard">✔ Segurança em dobro.</h2>
+                        <button class="buttoncard">R$ 359,00</button>
+                    </div>
+
+                </div>
+
+                <div class="contentcard">
+
+                    <div class="card">
+                        <img src="/Image/buziosCard.png">
+                        <h1 class="titlecard">Minas Gerais ⇆ Armação dos Búzios</h1>
+                        <h2 class="descriptioncard">✔ Compre em até 10x sem juros.</h2>
+                        <h2 class="descriptioncard">✔ Bagagem de até 30kg.</h2>
+                        <h2 class="descriptioncard">✔ Segurança em dobro.</h2>
+                        <button class="buttoncard">R$ 329,00</button>
+                    </div>
+
+                    <div class="card">
+                        <img src="/Image/caboCard.png">
+                        <h1 class="titlecard">Espírito Santo ⇆ Cabo Frio</h1>
+                        <h2 class="descriptioncard">✔ Compre em até 10x sem juros.</h2>
+                        <h2 class="descriptioncard">✔ Bagagem de até 30kg.</h2>
+                        <h2 class="descriptioncard">✔ Segurança em dobro.</h2>
+                        <button class="buttoncard">R$ 399,00</button>
+                    </div>
+
+                </div>
+
+                
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-conteudo">
+            <div class="footer-menu">
+                <ul><h4>Menu</h4>
+                <li class="linhafooter"><a href="destino.html">Destino</a></li>
+                <li class="linhafooter"><a href="promocoes.html">Promoções</a></li>
+                <li class="linhafooter"><a href="contato.html">Contato</a></li></ul>           
+            </div>
+
+        <div class="footer-email">
+            <form><p>Inscreva-se para receber novidades!</p><br>
+            E-mail: <input class="linhaemail" type="text" name="email"> <input class="check" type="reset" value="✔">
+            </div></form>
+
+        </div>
+        <div class="copy">©</div>
+    </footer>
+
+
+    
+</body>
+</html>
